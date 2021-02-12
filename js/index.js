@@ -8,7 +8,6 @@ class CountdownTimer {
             hours: document.querySelector('[data-value="hours"]'),
             mins: document.querySelector('[data-value="mins"]'),
             secs: document.querySelector('[data-value="secs"]'),
-            timer: document.querySelector('#timer-1')
         };
     }
 
@@ -30,10 +29,10 @@ class CountdownTimer {
     }
 
     timerAdd(days, hours, mins, secs) {
-        this.refs.days.textContent = `${days}`
-        this.refs.hours.textContent = `${hours}`
-        this.refs.mins.textContent = `${mins}`
-        this.refs.secs.textContent = `${secs}`
+        this.refs.days.textContent = days
+        this.refs.hours.textContent = hours
+        this.refs.mins.textContent = mins
+        this.refs.secs.textContent = secs
 
     }
 
